@@ -1,10 +1,10 @@
 <?php
 
-$host = "vp2016.cmxqtqdqyohf.us-east-1.rds.amazonaws.com";
-$port = "3306";
-$username = "karan";
-$password = "karan_ums";
-$database = "karan_ums";
+$host = getenv('host');
+$port = getenv('port');
+$username = getenv('username');
+$password = getenv('password');
+$database = getenv('database');
 
 $con = mysqli_connect($host, $username, $password, $database);
 // Check connection
